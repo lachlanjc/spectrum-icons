@@ -1,0 +1,23 @@
+{
+  "name": "spectrum-icons",
+  "version": "0.0.1",
+  "description": "Spectrum's iconset as React components",
+  "main": "dist/index.js",
+  "keywords": [
+    "icon"
+  ],
+  "author": "Lachlan Campbell",
+  "license": "MIT",
+  "scripts": {
+    "prepare": "babel index.js --out-dir dist"
+  },
+  "dependencies": {
+    "react": "^16.3.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "prop-types": "^15.6.1"
+  }
+}
