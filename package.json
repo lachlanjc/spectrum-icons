@@ -9,8 +9,8 @@
   "author": "Lachlan Campbell",
   "license": "MIT",
   "scripts": {
-    "demo": "x0 build demo.js -s --out-dir docs",
-    "dev": "x0 dev demo.js -op 8080",
+    "docs": "x0 build docs/index.js -s --out-dir docs",
+    "dev": "x0 dev docs/index.js -op 8080",
     "prepare": "babel index.js --out-dir dist"
   },
   "dependencies": {

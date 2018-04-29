@@ -1,5 +1,5 @@
 import React from 'react'
-import Icon, { glyphNames } from './index.js'
+import Icon, { glyphNames } from '../index.js'
 
 export default () => (
   <div
