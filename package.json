@@ -4,10 +4,10 @@
   "description": "Spectrum's iconset as React components",
   "main": "dist/index.js",
   "keywords": [
-    "icon"
+    "icon",
+    "react"
   ],
   "author": "Lachlan Campbell",
-  "license": "MIT",
   "scripts": {
     "docs": "x0 build docs/index.js -s --out-dir docs",
     "dev": "x0 dev docs/index.js -op 8080",
@@ -22,5 +22,13 @@
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-0": "^6.24.1",
     "prop-types": "^15.6.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lachlanjc/spectrum-icons.git"
+  },
+  "bugs": {
+    "url": "https://github.com/lachlanjc/spectrum-icons/issues"
+  },
+  "homepage": "https://lachlanjc.me/spectrum-icons"
 }
