@@ -486,27 +486,35 @@ export const glyphs = {
 }
 export const glyphNames = Object.keys(glyphs)
 
-const Icon = ({ glyph, size = 32, ...props }) => (
-  <svg
-    fillRule="evenodd"
-    clipRule="evenodd"
-    strokeLinejoin="round"
-    strokeMiterlimit="1.414"
-    xmlns="http://www.w3.org/2000/svg"
-    aria-labelledby="title"
-    viewBox="0 0 32 32"
-    preserveAspectRatio="xMidYMid meet"
-    fill="currentColor"
-    width={size}
-    height={size}
-    {...props}
-  >
-    <title id="title">{glyph}</title>
-    {glyphs[glyph]}
-  </svg>
-)
+const Icon = ({ is = 'svg', glyph = 'like', size = 32, ...props }) => {
+  const Component = is
+  return (
+    <svg
+      fillRule="evenodd"
+      clipRule="evenodd"
+      strokeLinejoin="round"
+      strokeMiterlimit="1.414"
+      xmlns="http://www.w3.org/2000/svg"
+      aria-labelledby="title"
+      viewBox="0 0 32 32"
+      preserveAspectRatio="xMidYMid meet"
+      fill="currentColor"
+      width={size}
+      height={size}
+      {...props}
+    >
+      <title id="title">{glyph}</title>
+      {glyphs[glyph]}
+    </svg>
+  )
+}
 
 Icon.propTypes = {
+  is: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.func,
+    PropTypes.element
+  ]),
   glyph: PropTypes.oneOf(glyphNames),
   size: PropTypes.number
 }
