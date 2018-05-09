@@ -507,7 +507,7 @@ const Icon = ({ glyph, size = 32, ...props }) => (
 )
 
 Icon.propTypes = {
-  glyph: PropTypes.string.isRequired,
+  glyph: PropTypes.oneOf(glyphNames),
   size: PropTypes.number
 }
 
