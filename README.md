@@ -3,6 +3,8 @@
 [Spectrum](https://spectrum.chat)’s amazing
 [iconset](https://github.com/withspectrum/spectrum/blob/alpha/src/components/icons/index.js), republished on npm as React components.
 
+[See them all](https://lachlanjc.me/spectrum-icons)
+
 ## Usage
 
 ```sh
