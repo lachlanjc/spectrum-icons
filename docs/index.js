@@ -6,15 +6,23 @@ export default () => (
     style={{
       display: 'grid',
       gridTemplateColumns: 'repeat(auto-fill, minmax(48px, 1fr))',
-      gridGap: 16,
+      gridGap: 24,
       padding: 32,
-      maxWidth: 768,
-      margin: 'auto'
+      maxWidth: 1024,
+      margin: 'auto',
+      fontFamily: 'system-ui',
+      fontSize: 12,
+      textAlign: 'center',
+      wordBreak: 'break-word',
+      wordWrap: 'wrap'
     }}
   >
     <title>spectrum-icons</title>
     {glyphNames.map(key => (
-      <Icon glyph={key} title={key} size={48} key={key} />
+      <div key={key}>
+        <Icon glyph={key} title={key} size={48} />
+        <p style={{ color: '#666' }} children={key} />
+      </div>
     ))}
   </div>
 )
