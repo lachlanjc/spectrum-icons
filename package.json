@@ -1,6 +1,6 @@
 {
   "name": "spectrum-icons",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Spectrum's iconset as React components",
   "main": "dist/index.js",
   "keywords": [
