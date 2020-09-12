@@ -653,7 +653,7 @@ export const glyphs = {
 }
 export const glyphNames = Object.keys(glyphs)
 
-const Icon = ({ is = 'svg', glyph = 'like', size = 32, ...props }) => {
+const Icon = ({ is = 'svg', glyph = 'like', title = '', size = 32, ...props }) => {
   const Component = is
   return (
     <svg
@@ -670,7 +670,7 @@ const Icon = ({ is = 'svg', glyph = 'like', size = 32, ...props }) => {
       height={size}
       {...props}
     >
-      <title id="title">{glyph}</title>
+      {!!title ? <title id="title">{title}</title> : null}
       {glyphs[glyph]}
     </svg>
   )
@@ -683,6 +683,7 @@ Icon.propTypes = {
     PropTypes.element
   ]),
   glyph: PropTypes.oneOf(glyphNames),
+  title: PropTypes.string,
   size: PropTypes.number
 }
 
